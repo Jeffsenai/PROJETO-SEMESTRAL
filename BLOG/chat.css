@@ -146,7 +146,7 @@
     box-shadow: 0 0 5px rgba(11, 25, 86, 0.5);
   }
   
-  button{
+  .abrir-chat-btn{
     width: 40px;
     height: 40px;
     border: none;
@@ -205,6 +205,11 @@
   }
   
   
+  #enviar-btn{
+    background-color: #0B1956;
+    border-radius: 100%;
+    padding: 5px;
+  }
   .setinha {
     width: 20px;
     height: 20px;
@@ -218,7 +223,7 @@
     align-items: center;
     background-color: #0B1956;
     color: #ffffff;
-    padding: 10px 15px;
+    padding: 20px 15px;
   }
   
   .titulo-chat {
