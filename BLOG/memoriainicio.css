@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+   border: 0;
+}
+@font-face {
+    font-family: "Fonte texto";
+    src: url(Fontes/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Fonte titulo";
+    src: url(Fontes/Inter_18pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Fonte titulo2";
+    src: url(Fontes/CreatoDisplay-Black.otf);
+}
+
+@font-face {
+    font-family: "Fonte titulo3";
+    src: url(Fontes/CreatoDisplay-Medium.otf);
+}
+
+
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-image: url(img/memoria.png);
+}
+
+.texto-banner h2 {
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+}
+
+.texto-banner p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.botao {
+    height: 20px;
+    width: 50px;
+    color: #fff;
+    padding: 6px 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: #f4f4f4 2px solid;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #fdfefe;
+    color:#0b1956 ;
+}
+a{
+    height: 10px;
+    width: 50px;
+}
+.texto-banner {
+    padding-top: 300px;
+}
+footer {
+    background-color: #0B1956;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    padding-bottom: 35px;
+  }
+  
+  .conteudo-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .secao-footer {
+    flex: 1;
+    
+    text-align: left;
+  }
+  
+  .links ul {
+    list-style: none;
+    margin-left: 100px;
+    line-height: 2.0;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: white;
+    font-family: "Fonte texto";
+  }
+  
+  .links li {
+    margin: 10px 0;
+  }
+
+  /* EFEITOS DE HOVER */
+  .links a:hover {
+  font-family: "Fonte titulo";
+}
+
+/* FIM!!!! */
+  
+  .newsletter h3,
+  .contato h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .newsletter p,
+  .contato p {
+    margin: 5px 0px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+
+ 
+  
+  .contato {
+    padding-right: 80px;
+  }
+
+  .newsletter {
+    padding-left: 80px;
+  }
+  
+
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: "Fonte texto";
+    text-align: left;
+  }
+
+  input::placeholder {
+    color: white;
+  }
+  
+  .newsletter button {
+    padding: 7px 20px;
+    color: white;
+    border-radius: 15px;
+    width: 120px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid white;
+    font-family: "Fonte titulo";
+  }
+
+  /* EFEITOS DE HOVER */
+
+  .newsletter button:hover {
+    background-color: white;
+    color:#0B1956;
+  transition: color 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+/* FIM!!!! */
+
+
+  .secao-footer-contato{
+    color: white;
+    text-align: left;
+    line-height: 2.5;
+    margin-right: 80px;
+    margin-left: 50px;
+   }
+
+   .secao-footer-contato h4 {
+    font-family: "Fonte titulo2";
+    margin-left: 20px;
+  }
+
+   .secao-footer-contato p img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .secao-footer-contato p {
+    font-family: "Fonte texto";
+    margin-left: 20px;
+  }
+
+  
+  .divisoria {
+    width: 1px;
+    background: url('Line\ 6.png') no-repeat center center;
+    background-size: cover;
+    height: 230px;
+    margin-top: 10px;
+    margin-left: 120px;
+  }
+
+  .divisoria1 {
+    width: 1px;
+    background: url('Line\ 6.png') no-repeat center center;
+    background-size: cover;
+    height: 230px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  
+  .barra-escura-footer{
+    background-color: #081446;
+    height: 60px;
+    width: 100%;
+  }
