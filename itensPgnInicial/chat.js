@@ -109,7 +109,7 @@ document.getElementById("abrir-chat-btn").addEventListener("click", () => {
     // coloca imagem e nome
     detalhes.innerHTML = `
       <img src="${avatar}" alt="${nome}">
-      <span>${nome}</span>
+      <h6>${nome}</h6>
     `;
   
     //div para o texto 
