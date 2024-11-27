@@ -9,12 +9,45 @@
     <title>Dicionário de Libras</title>
 </head>
 <body>
+  <header>
+    <div class="container">
+        <img class="logo" src="Imagens/logo.png" alt="">
+        <nav>
+            <a class="inicio" id="navegacao" href="../index.html">Início</a>
+            <a id="navegacao" href="../CURSOS/index.html">Cursos</a>
+            <a id="navegacao" href="http://localhost:3000/adicionar">Login</a>
+            
+            <nav role="navigation">
+              <!-- container do menu -->
+              <div id="menuAlternar"> 
+                  <input type="checkbox" id="menuCheckbox" onclick="document.body.classList.toggle('menu-aberto');" />
+                  <h1 class="espaco"></h1>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <!-- itens do menu-->
+                  <ul id="menu">
+                      <li><a href="../index.html">Início</a></li>
+                      <li><a href="index.html">Blog</a></li>
+                      <li><a href="../Dicionario/index.html">Dicionário</a></li>
+                      <li><a href="../PaginaDeJogos/index.html">Jogos</a></li>
+                      <li><a href="../index.html#footer" >Contate-nos</a></li>
+                  </ul>
+              </div>
+          </nav>
+        </nav>
+    </div>
+</header>
+
+<main id="conteudoPrincipal"> 
     <div id="container">
         <h2 id="titulo">Dicionário de Libras</h2>
+        <p class="subtitulo">Digite a palavra abaixo</p>
         <div id="container__secundario">
             <div id="container__input">
-                <input type="text" name="text" id="container__inputtxt" placeholder="Digite aqui a palavra desejada...">
-                <button id="container__btn">Buscar</button>
+                <input type="text" name="text" id="container__inputtxt" placeholder="Qual palavra você está buscando?">
+                
+                <button id="container__btn"><img src="Icones/buscar.png" id="container__icon" alt="Buscar"></button> 
             </div>
             <div id="container__result"></div>
         </div>
@@ -97,5 +130,6 @@
 
     <script src="script.js"></script>
     <script src="chat.js"></script>
+</main>
 </body>
 </html>
