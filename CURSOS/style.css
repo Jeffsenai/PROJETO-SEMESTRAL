@@ -168,8 +168,8 @@ transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
             opacity 0.55s ease; 
 }
 
-/* Estados transformados para formar o "X" */
-#menuAlternar input:checked ~ span {
+/* Estados transformados para formar span o "X" */
+#menuAlternar input:checked ~ {
 opacity: 1; 
 transform: rotate(45deg) translate(-1px, -1px); /* ajustado para o tamanho menor */
 background: black; 
