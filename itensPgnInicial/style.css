@@ -328,9 +328,10 @@ h2{
 }
 
 .somos{
-  font-family: light;
+  font-family: "Fonte texto";
   color: white;
-  font-size: 18px;
+  font-size: 16px;
+  width: 450px;
 }
 
 .more{
@@ -392,10 +393,11 @@ h1{
 
 .num{
   color: white;
-  font-family: light;
-  font-size:15px;
+  font-family: "Fonte texto";
+  font-size:14px;
   margin-top: 40px;
   margin-left: 20px;
+  width: 250px;
 }
 
 span{
@@ -451,7 +453,7 @@ border-radius: 100px 5px 5px 5px;
 
 .num1{
   color: #426CC2;
-  font-family: light;
+  font-family: "Fonte texto";
   font-size:15px;
   margin-top: 40px;
   margin-left: 40px;
