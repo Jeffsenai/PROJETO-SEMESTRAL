@@ -570,10 +570,13 @@ font-family: "Fonte texto";
 }
 
 .text{
-    width: 700px;
+    width: 640px;
     font-family: "Fonte texto";
     font-size: 18px;
     margin-top: 35px;
+    line-height: 1.5;
+    text-align: justify;
+
 }
 
 .texto1{

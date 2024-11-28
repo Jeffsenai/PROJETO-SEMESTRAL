@@ -328,6 +328,7 @@ header {
 h1 {
     justify-self: center;
     margin-top: 60px;
+    font-family: "Fonte titulo";
 }
 
 .tours {
@@ -363,12 +364,14 @@ h1 {
 
 .tour h3 {
     font-size: 1.2rem;
+    font-family: "Fonte titulo";
     margin: 10px 0;
     color: #333;
 }
 
 .tour p {
     font-size: 1rem;
+    font-family: "Fonte texto";
     margin-bottom: 10px;
     color: #666;
 }
