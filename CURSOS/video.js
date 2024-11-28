@@ -7,23 +7,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const videos = [
         {
-            src: 'https://www.w3schools.com/html/mov_bbb.mp4',
-            title: 'Introdução à Libras',
-            description: 'Tempo de duração: 10 minutos',
+            src: 'https://drive.google.com/file/d/1ZEKQK-GhhnS_5optQIGqQMEzPwrfLnxO/view?usp=sharing',
+            title: 'Libras para iniciantes - Academia de Libras',
+            description: 'Tempo de duração: 17 minutos',
             imgEsquerda: 'Imagens/imagemEsquerda.png',
             imgDireita: 'Imagens/imagemDireita.png'
         },
         {
-            src: 'https://www.w3schools.com/html/mov_bbb.mp4',
-            title: 'Aula Intermediária',
-            description: 'Tempo de duração: 15 minutos',
+            src: 'video2.mp4',
+            title: 'Os sinais mais utilizados no cotidiano',
+            description: 'Tempo de duração: 24 minutos',
             imgEsquerda: 'Imagens/imagemEsquerda2.png',
             imgDireita: 'Imagens/imagemDireita2.png'
         },
         {
-            src: 'https://www.w3schools.com/html/mov_bbb.mp4',
-            title: 'Aula Avançada',
-            description: 'Tempo de duração: 20 minutos',
+            src: 'video3.mp4',
+            title: 'Os 100 Verbos mais comuns em Libras',
+            description: 'Tempo de duração: 27 minutos',
             imgEsquerda: 'Imagens/imagemEsquerda3.png',
             imgDireita: 'Imagens/imagemDireita3.png'
         }

@@ -1,12 +1,12 @@
 const bancoDeDados = {
         "oi": {
-            video: "Videos/teste.mp4",
+            video: "Videos/oi.mp4",
         },
         "tudo bem": {
             video: "Videos/tudo_bem.mp4",
         },
-        "por favor": {
-            video: "Videos/por_favor.mp4",
+        "quarta": {
+            video: "Videos/quarta.mp4",
         },
         "sim": {
             video: "Videos/sim.mp4",
