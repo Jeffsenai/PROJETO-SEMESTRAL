@@ -320,7 +320,7 @@ header {
 }
 
 h2{
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Fonte titulo";
   color: white;
   width: 500px;
@@ -337,7 +337,7 @@ h2{
   margin-top: 25px;
   background-color: rgba(255, 192, 203, 0);
   border: 1px solid white;
-  width: 90px;
+  width: 120px;
   height: 30px;
   border-radius: 5px;
   font-family: "Fonte titulo3";
@@ -717,7 +717,7 @@ margin-bottom: 20px;
 .circulu p{
   font-size: 30px;
   color: #F6F1E7;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Fonte texto";
 }
 
 .circuluu{
@@ -735,7 +735,7 @@ margin-bottom: 20px;
 .circuluu p{
   font-size: 30px;
   color: #0B1956;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Fonte texto";
 }
 
 .circulus{
@@ -798,8 +798,9 @@ margin-right: 100px;
 .textcircul{
 width: 250px;
 /* margin-left: 20px; */
-margin-right: 20px;
+margin-right: 30px;
 text-align: justify;
+font-family: "Fonte texto";
 }
 
 
