@@ -7,21 +7,52 @@
     <link rel="stylesheet" href="memoriainicio.css">
 </head>
 <body>
-    <header>
-        
-</header>
+  <header>
+    <div class="container">
+        <img class="logo" src="blog matérias/Imagens/logo.png" alt="">
+        <nav>
+            <a class="inicio" id="navegacao" href="../index.html">Início</a>
+            <a id="navegacao" href="../CURSOS/index.html">Cursos</a>
+            <a id="navegacao" href="http://localhost:3100/adicionar">Login</a>
+            
 
-    </header>
+
+
+            <nav role="navigation">
+                <!-- container do menu -->
+                <div id="menuAlternar"> 
+                    <input type="checkbox" id="menuCheckbox" onclick="document.body.classList.toggle('menu-aberto');" />
+                    <h1 class="espaco"></h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <!-- itens do menu-->
+                    <ul id="menu">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../BLOG/index.html">Blog</a></li>
+                        <li><a href="../Dicionario/index.html">Dicionário</a></li>
+                        <li><a href="../PaginaDeJogos/index.html">Jogos</a></li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+    </div>
+</header>
+   
+<main id="conteudoPrincipal">
 
     <main>
         <section class="banner">
             <div class="texto-banner">
                 <h2>Jogo da Memória</h2>
                 <p>Que tal testar seus conhecimentos de uma maneira divertida?</p>
-                <a href="#quiz" class="botao">Jogar</a>
+                <a href="../Jogos/Memoria/index.html" class="botao">Jogar</a>
             </div>
         </section>
     </main>
+
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -37,16 +68,16 @@
 
 
 
-      <footer id="footer">
+      <footer>
         <div class="conteudo-footer">
           <div class="secao-footer links">
             <ul>
-              <a href=""><li>Sobre nós</li></a>
-              <a href="CURSOS/index.html"><li>Cursos</li></a>
-              <a href="BLOG/index.html"><li>Blog</li></a>
-              <a href=""><li>Chat</li></a>
-              <a href="Dicionario/index.html"><li>Dicionário</li></a>
-              <a href="PaginaDeJogos/index.html"><li>Jogos</li></a>
+              <a class = "aFooter" href=""><li>Sobre nós</li></a>
+              <a class = "aFooter" href="../CURSOS/index.html"><li>Cursos</li></a>
+              <a class = "aFooter" href="../BLOG/index.html"><li>Blog</li></a>
+              <a class = "aFooter" href=""><li>Chat</li></a>
+              <a class = "aFooter" href="../Dicionario/index.html"><li>Dicionário</li></a>
+              <a class = "aFooter" href="../PaginaDeJogos/index.html"><li>Jogos</li></a>
             </ul>
           </div>
       
@@ -65,13 +96,17 @@
       
           <div class="secao-footer-contato">
             <h4>Contate-nos</h4>
-            <p><img src="itensPgnInicial/Icones/telefone.png" alt="Ícone Telefone">(11) 93211 - 7232</p>
-            <p><img src="itensPgnInicial/Icones/email.png" alt="Ícone Email"> librali@gmail.com</p>
-            <p><img src="itensPgnInicial/Icones/local.png" alt="Ícone Localização"> Ferraz de Vasconcelos - SP</p>
-            <p><img src="itensPgnInicial/Icones/instagram.png" alt="Ícone Instagram"> @librali</p>
+            <p><img src="Icones/telefone.png" alt="Ícone Telefone">(11) 93211 - 7232</p>
+            <p><img src="Icones/email.png" alt="Ícone Email"> librali@gmail.com</p>
+            <p><img src="Icones/local.png" alt="Ícone Localização"> Ferraz de Vasconcelos - SP</p>
+            <p><img src="Icones/instagram.png" alt="Ícone Instagram"> @librali</p>
           </div>
         </div>
   
       </footer>
+      <div class="barra-escura-footer"></div>
+      
+      
+      </main>
 </body>
 </html>

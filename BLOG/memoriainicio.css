@@ -32,7 +32,237 @@ body {
     line-height: 1.6;
 }
 
+header {
+  color: black;
+  padding: 25px 0;
+  border-bottom: 1px solid black; 
+  font-family: "Fonte texto";
+}
 
+.logo{
+width: 15%;
+height: 62px;
+margin-right: 30px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 100px;
+  padding: 0 20px;
+}
+
+.espaco{
+height: 5px;
+}
+
+header nav {
+  display: flex;
+}
+
+.inicio{
+margin-left: 650px;
+}
+
+header nav a {
+  color: black;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 35px;
+  font-family: "Fonte texto";
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* LINHA ABAIXO DO A */
+#navegacao{
+position: relative; 
+}
+
+
+#navegacao::after {
+content: "";
+width: 0%;
+height: 3px;
+background-color: #FF6F00;
+position: absolute;
+bottom: -4px; 
+left: 0;
+transition: width 0.4s ease-in-out;
+}
+
+
+#navegacao:hover::after {
+width: 100%;
+}
+
+/* até aq */
+
+
+
+
+
+
+
+
+/* MENU!!!!!!!!!!!!!! */
+
+
+main {
+  max-width: 100%;
+  
+  transition: filter 0.3s ease-in-out; /*  transição */
+}
+
+p {
+  font-size: 18px; 
+}
+
+
+
+/* botão do menu */
+#menuAlternar {
+  position: absolute; 
+  top: 40px; /*  topo */
+  right: 20px; 
+  z-index: 200; /* botão por cima d menu */
+}
+
+#menuAlternar a {
+  text-decoration: none; 
+  font-size: 16px;
+  color: #ffffff; 
+  transition: color 0.3s ease; 
+  font-family: "Fonte texto";
+}
+
+#menuAlternar a:hover {
+  font-family: "Fonte titulo";
+}
+
+#menuAlternar input {
+  display: block; 
+  position: absolute; 
+  cursor: pointer; 
+  width: 80px;
+  height: 80px;
+  opacity: 0; 
+}
+
+#menuAlternar span {
+display: block; 
+width: 20px; /* nova largura */
+height: 2px; /* nova altura */
+margin-bottom: 4px; /* espaçamento menor entre as linhas */
+margin-top: 3px;
+margin-right: 50px;
+position: relative; 
+background: black; /* cor das linhas */
+border-radius: 3px; 
+z-index: 1; 
+transform-origin: 2px 0px; /* ajustado ao novo tamanho */
+transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease; 
+}
+
+/* Estados transformados para formar o "X" */
+#menuAlternar input:checked ~ span {
+opacity: 1; 
+transform: rotate(45deg) translate(-1px, -1px); /* ajustado para o tamanho menor */
+background: black; 
+}
+
+#menuAlternar input:checked ~ span:nth-last-child(3) {
+opacity: 0; 
+transform: rotate(0deg) scale(0.2, 0.2); 
+}
+
+#menuAlternar input:checked ~ span:nth-last-child(2) {
+transform: rotate(-45deg) translate(0, -1px); /* ajustado para o tamanho menor */
+}
+
+
+#menuAlternar span:first-child {
+  transform-origin: 0% 0%; /* de onde sai a 1°lunha */
+}
+
+#menuAlternar span:nth-last-child(2) {
+  transform-origin: 0% 100%; /* de onde sai a 2°lunha */
+}
+
+#menuAlternar input:checked ~ span {
+  opacity: 1; 
+  transform: rotate(45deg) translate(-1px, -1px); /* muda o icone pra X */
+  position: relative;
+}
+
+#menuAlternar input:checked ~ span:nth-last-child(3) {
+  opacity: 0; 
+  transform: rotate(0deg) scale(0.2, 0.2); 
+}
+
+#menuAlternar input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px); 
+}
+
+/* Estilização do menu */
+#menu {
+  position: fixed; 
+  max-width: 280px; /* largura qnd abre*/
+  width: 80%; 
+  height: 100%; 
+  margin: 0; 
+  right: 0; 
+  padding: 20px; 
+  padding-top: 80px; 
+  box-sizing: border-box; 
+  background: #1a1a4c; /* cor do fundo */
+  list-style-type: none; 
+  transform: translateX(100%); /* deixa ano que vem */
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0); /* animacao qnd abre*/
+  color: #ffffff; /* cor do texto */
+  z-index: 100; /* deixa o menu acima de tudo */
+}
+
+#menu li {
+  padding: 15px 0; /* espaço entre iten */
+  font-size: 22px; 
+}
+
+#menu li label {
+  cursor: pointer; 
+}
+
+#menuAlternar input:checked ~ ul {
+  transform: translateX(0); /* ativa o menu */
+}
+
+
+body.menu-aberto main  {
+  filter: blur(5px); /* blur no site td */
+}
+
+body.menu-aberto #navegacao {
+filter: blur(5px); /* blur no site td */
+}
+
+
+body:not(.menu-aberto) #menu {
+  transform: translateX(100%); /* deixa o menu fora da tela */
+}
+
+
+
+
+
+
+/* FIM DO MENU */
 
 
 
@@ -84,168 +314,191 @@ a{
 .texto-banner {
     padding-top: 300px;
 }
-footer {
-    background-color: #0B1956;
-    color: white;
-    text-align: center;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    padding-bottom: 35px;
-  }
-  
-  .conteudo-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  
-  .secao-footer {
-    flex: 1;
-    
-    text-align: left;
-  }
-  
-  .links ul {
-    list-style: none;
-    margin-left: 100px;
-    line-height: 2.0;
-  }
-  
-  .links a {
-    text-decoration: none;
-    color: white;
-    font-family: "Fonte texto";
-  }
-  
-  .links li {
-    margin: 10px 0;
-  }
 
-  /* EFEITOS DE HOVER */
-  .links a:hover {
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #0B1956;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+  padding-bottom: 50px;
+  margin-top: 80px;
+}
+
+.conteudo-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.secao-footer {
+  flex: 1;
+  
+  text-align: left;
+}
+
+.links ul {
+  list-style: none;
+  margin-left: 100px;
+  line-height: 2.0;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-family: "Fonte texto";
+}
+
+.links li {
+  margin: 10px 0;
+}
+
+/* EFEITOS DE HOVER */
+
+.links a:hover {
+  font-family: "Fonte titulo";
+  transition: color 0.5s ease;
+}
+
+/* FIM!!!! */
+
+.newsletter h3,
+.contato h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.newsletter p,
+.contato p {
+  margin: 5px 0px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+
+
+.contato {
+  padding-right: 80px;
+}
+
+.newsletter {
+  padding-left: 80px;
+}
+
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px 15px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: "Fonte texto";
+  text-align: left;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.newsletter button {
+  padding: 7px 20px;
+  color: white;
+  border-radius: 15px;
+  width: 120px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
   font-family: "Fonte titulo";
 }
 
-/* FIM!!!! */
-  
-  .newsletter h3,
-  .contato h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .newsletter p,
-  .contato p {
-    margin: 5px 0px;
-    text-align: center;
-    margin-bottom: 15px;
-  }
+/* EFEITOS DE HOVER */
 
-
- 
-  
-  .contato {
-    padding-right: 80px;
-  }
-
-  .newsletter {
-    padding-left: 80px;
-  }
-  
-
-  .newsletter form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .newsletter input[type="email"] {
-    padding: 10px 15px;
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    width: 100%;
-    max-width: 320px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    font-family: "Fonte texto";
-    text-align: left;
-  }
-
-  input::placeholder {
-    color: white;
-  }
-  
-  .newsletter button {
-    padding: 7px 20px;
-    color: white;
-    border-radius: 15px;
-    width: 120px;
-    cursor: pointer;
-    background: transparent;
-    border: 1px solid white;
-    font-family: "Fonte titulo";
-  }
-
-  /* EFEITOS DE HOVER */
-
-  .newsletter button:hover {
-    background-color: white;
-    color:#0B1956;
-  transition: color 0.5s ease;
-  transition: background 0.5s ease;
+.newsletter button:hover {
+  background-color: white;
+  color:#0B1956;
+transition: color 0.5s ease;
+transition: background 0.5s ease;
 }
 
 /* FIM!!!! */
 
 
-  .secao-footer-contato{
-    color: white;
-    text-align: left;
-    line-height: 2.5;
-    margin-right: 80px;
-    margin-left: 50px;
-   }
+.secao-footer-contato{
+  color: white;
+  text-align: left;
+  line-height: 2.5;
+  margin-right: 80px;
+  margin-left: 50px;
+ }
 
-   .secao-footer-contato h4 {
-    font-family: "Fonte titulo2";
-    margin-left: 20px;
-  }
+ .secao-footer-contato h4 {
+  font-family: "Fonte titulo2";
+  margin-left: 20px;
+}
 
-   .secao-footer-contato p img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 10px;
-  }
+ .secao-footer-contato p img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 
-  .secao-footer-contato p {
-    font-family: "Fonte texto";
-    margin-left: 20px;
-  }
+.secao-footer-contato p {
+  font-family: "Fonte texto";
+  margin-left: 20px;
+}
 
-  
-  .divisoria {
-    width: 1px;
-    background: url('Line\ 6.png') no-repeat center center;
-    background-size: cover;
-    height: 230px;
-    margin-top: 10px;
-    margin-left: 120px;
-  }
 
-  .divisoria1 {
-    width: 1px;
-    background: url('Line\ 6.png') no-repeat center center;
-    background-size: cover;
-    height: 230px;
-    margin-top: 10px;
-    margin-left: 0px;
-  }
-  
-  .barra-escura-footer{
-    background-color: #081446;
-    height: 60px;
-    width: 100%;
-  }
+.divisoria {
+  width: 1px;
+  background: url('Line\ 6.png') no-repeat center center;
+  background-size: cover;
+  height: 230px;
+  margin-top: 10px;
+  margin-left: 120px;
+}
+
+.divisoria1 {
+  width: 1px;
+  background: url('Line\ 6.png') no-repeat center center;
+  background-size: cover;
+  height: 230px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.barra-escura-footer {
+  background-color: #081446;
+  height: 60px;
+  width: 100%;
+}
+
+
+
+
+
+
+ 
