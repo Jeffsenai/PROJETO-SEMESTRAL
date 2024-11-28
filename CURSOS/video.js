@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const videos = [
         {
-            src: 'https://drive.google.com/file/d/1ZEKQK-GhhnS_5optQIGqQMEzPwrfLnxO/view?usp=sharing',
+            src: 'video1.mp4',
             title: 'Libras para iniciantes - Academia de Libras',
             description: 'Tempo de duração: 17 minutos',
             imgEsquerda: 'Imagens/imagemEsquerda.png',
@@ -15,15 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             src: 'video2.mp4',
-            title: 'Os sinais mais utilizados no cotidiano',
+            title: 'Os sinais mais utilizados no cotidiano - Academia de Libras',
             description: 'Tempo de duração: 24 minutos',
             imgEsquerda: 'Imagens/imagemEsquerda2.png',
             imgDireita: 'Imagens/imagemDireita2.png'
         },
         {
             src: 'video3.mp4',
-            title: 'Os 100 Verbos mais comuns em Libras',
-            description: 'Tempo de duração: 27 minutos',
+            title: '10 Frases mais utilizadas em Libras - Academia de Libras ',
+            description: 'Tempo de duração: 17 minutos',
             imgEsquerda: 'Imagens/imagemEsquerda3.png',
             imgDireita: 'Imagens/imagemDireita3.png'
         }
