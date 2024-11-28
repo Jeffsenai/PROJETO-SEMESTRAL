@@ -90,7 +90,7 @@ document.getElementById("abrir-chat-btn").addEventListener("click", () => {
       
     
       // delay de 5 segundos para responder
-      setTimeout(() => adicionarMensagem("Bot", "Imagens/bot2.jpg", respostaBot, "bot"), 500);
+      setTimeout(() => adicionarMensagem("Chat Librali", "Imagens/bot2.jpg", respostaBot, "bot"), 500);
     }
   });
   
