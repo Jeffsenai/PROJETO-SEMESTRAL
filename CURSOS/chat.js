@@ -22,6 +22,12 @@ document.getElementById("abrir-chat-btn").addEventListener("click", () => {
       // apaga a msg que foi escrita
       document.getElementById("entrada-usuario").value = "";
   
+
+
+
+
+
+      
       // Variável que irá armazenar a resposta do bot
       let respostaBot = "";
   
