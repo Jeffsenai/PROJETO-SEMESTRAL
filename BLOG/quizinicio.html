@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste seus Conhecimentos</title>
     <link rel="stylesheet" href="quizinicio.css">
+    <link rel="stylesheet" href="chat.css">
 </head>
 <body>
   <header>
@@ -50,6 +51,31 @@
             </div>
         </section>
     </main>
+
+
+
+    <!-- CHAT  -->
+    <div class="botaoCHAT">
+      <button id="abrir-chat-btn" class="abrir-chat-btn"><img src="Imagens/chat.png" alt=""></button>
+      <h1 class="explicacao">Chat Librali</h1>
+  </div>
+<div class="container-chat escondido">
+  <div class="header-chat">
+    <span class="titulo-chat">Chat Librali</span>
+    <button id="fechar-chat-btn" class="fechar-chat-btn"><img src="Imagens/X.png" alt="Fechar"></button>
+  </div>
+  <div id="janela-chat" class="janela-chat"></div>
+  <div class="area-input">
+    <input type="text" id="entrada-usuario" placeholder="Digite sua mensagem...">
+    <button id="enviar-btn"><img class="setinha" src="Imagens/seta.png" alt=""></button>
+  </div>
+</div>
+
+<!-- TERMINA AQUI !!!!!! -->
+
+
+
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -103,8 +129,6 @@
       </footer>
       <div class="barra-escura-footer"></div>
       
-      <script src="script.js"></script>
-      <script src="video.js"></script>
       <script src="chat.js"></script>
       </main>
 </body>
