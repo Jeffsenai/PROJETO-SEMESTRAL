@@ -17,7 +17,7 @@ document.getElementById("abrir-chat-btn").addEventListener("click", () => {
   
     if (entradaUsuario) {
       // nome + foto + mensagem 
-      adicionarMensagem("Você", "Imagens/usuario.png", entradaUsuario, "usuario");
+      adicionarMensagem("Você", "../CURSOS/Imagens/usuario.png", entradaUsuario, "usuario");
   
       // apaga a msg que foi escrita
       document.getElementById("entrada-usuario").value = "";
@@ -90,7 +90,7 @@ document.getElementById("abrir-chat-btn").addEventListener("click", () => {
       
     
       // delay de 5 segundos para responder
-      setTimeout(() => adicionarMensagem("Chat Librali", "Imagens/bot2.jpg", respostaBot, "bot"), 500);
+      setTimeout(() => adicionarMensagem("Chat Librali", "../CURSOS/Imagens/bot2.jpg", respostaBot, "bot"), 500);
     }
   });
   
