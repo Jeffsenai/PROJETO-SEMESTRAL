@@ -139,7 +139,7 @@ header {
   /* botão do menu */
   #menuAlternar {
     position: absolute; 
-    top: 22px; /*  topo */
+    top: -18px; /*  topo */
     right: 20px; 
     z-index: 200; /* botão por cima d menu */
   }
