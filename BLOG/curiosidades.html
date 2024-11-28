@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades</title>
+    <link rel="stylesheet" href="curiosidades.css">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <img class="logo" src="blog matérias/Imagens/logo.png" alt="">
+        <nav>
+            <a class="inicio" id="navegacao" href="../index.html">Início</a>
+            <a id="navegacao" href="../CURSOS/index.html">Cursos</a>
+            <a id="navegacao" href="http://localhost:3100/adicionar">Login</a>
+            
+
+
+
+            <nav role="navigation">
+                <!-- container do menu -->
+                <div id="menuAlternar"> 
+                    <input type="checkbox" id="menuCheckbox" onclick="document.body.classList.toggle('menu-aberto');" />
+                    <h1 class="espaco"></h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <!-- itens do menu-->
+                    <ul id="menu">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../BLOG/index.html">Blog</a></li>
+                        <li><a href="../Dicionario/index.html">Dicionário</a></li>
+                        <li><a href="../PaginaDeJogos/index.html">Jogos</a></li>
+                        <li><a href="../index.html#footer" >Contate-nos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+    </div>
+</header>
+   
+<main id="conteudoPrincipal"> 
+    <main>
+        <div class="imagemCrianca"> 
+            <p class="tituloArtigo">POR TRÁS DOS SINAIS: CURIOSIDADES QUE TODO<br>MUNDO DEVERIA SABER SOBRE LIBRAS</p>
+            <p class="subtituloArtigo">Que a Libras é uma Linguagem de sinais, você já sabe... mas você sabia<br>que ela é um idioma oficial no Brasil? Aqui, te contamos curiosidades de Libras que<br>todos deveriam saber!</p>
+            <p class="escritoPor">Escrito por: Librali.</p>
+        </div>
+
+        <!-- Introdução -->
+    <section class="intro">
+        <div class="texto-intro">
+            <p>Libras é muito mais do que gestos. É um universo de comunicação visual, expressão cultural e inclusão social. Descubra curiosidades, entenda sua gramática única e veja como ela conecta pessoas.</p>
+        </div>
+    </section>
+
+    <section class="curiosidades-estilo">
+        <h2>Curiosidades sobre Libras que Todos Deveriam Saber </h2>
+        <div class="galeria-curiosidades">
+            <div class="item-curiosidade">
+                <h3>É uma língua oficial no Brasil</h3>
+                <p>Libras foi reconhecida como meio legal de comunicação e expressão no Brasil pela Lei nº 10.436, de 24 de abril de 2002.</p>
+            </div>
+            <div class="item-curiosidade">
+                <h3>Não é Universal</h3>
+                <p>Cada país tem sua própria língua de sinais, e mesmo dentro de um país, podem haver variações regionais. Por exemplo, nos Estados Unidos, a língua de sinais é a ASL (American Sign Language), que é bem diferente da Libras.</p>
+            </div>
+            <div class="item-curiosidade">
+                <h3>Tem sua própria gramática</h3>
+                <p>A estrutura da Libras é diferente do português. Por exemplo, enquanto no português falamos "Eu vou para a escola", em Libras a estrutura seria algo como "Escola eu ir". A ordem das palavras reflete as características visuais e gestuais da língua.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="texto"> 
+        <p class="titulo1">
+            Existem sinais para nomes próprios
+        </p>
+        <p class="textinho">As pessoas que utilizam Libras frequentemente têm um "sinal-nome", que é criado com base em características pessoais ou físicas. Isso evita o uso do alfabeto manual toda vez que o nome precisa ser referido. <br> Além disso, o rosto e o corpo fazem parte da comunicação. Além das mãos, expressões faciais e movimentos corporais são essenciais para transmitir o significado e a emoção na Libras. Eles ajudam a dar contexto ou a mudar o significado de um sinal.</p>
+    </div>
+   
+
+    <section> 
+      <div class="culturaeduc">
+        <p class="ceT">Cultura e Educação</p>
+        <img src="img/book.png" alt="Livro">
+        <p class="textoeduc"><br>Você sabia que a educação bilíngue está crescendo?<br>Escolas especializadas no Brasil adotam um modelo bilíngue, onde Libras é ensinada como a primeira língua e o português, como a segunda. Além da educação, a arte também está presente. <br> <br> A Libras tem sua própria poesia e até músicas! A interpretação de músicas em Libras combina ritmo, expressão e criatividade para traduzir emoções e significado. Entre muitos artístas e iniciativas nós temos:<br><br>Fernanda Machado e Lucas Luiz são exemplos de intérpretes que se destacam na interpretação de músicas em Libras.
+        <br><br>Corais visuais: Grupos de surdos interpretam músicas em grupo, criando coreografias visuais sincronizadas.<br> <br>Festivais Surdos: Eventos como o Festival de Cultura Surda promovem apresentações de poesia e música em Libras.</p>
+      </div>
+    </section>
+    
+
+    </main>
+
+
+     <!-- CHAT  -->
+     <div class="botaoCHAT">
+      <button id="abrir-chat-btn" class="abrir-chat-btn"><img src="Imagens/chat.png" alt=""></button>
+      <h1 class="explicacao">Chat Librali</h1>
+  </div>
+<div class="container-chat escondido">
+  <div class="header-chat">
+    <span class="titulo-chat">Chat Librali</span>
+    <button id="fechar-chat-btn" class="fechar-chat-btn"><img src="Imagens/X.png" alt="Fechar"></button>
+  </div>
+  <div id="janela-chat" class="janela-chat"></div>
+  <div class="area-input">
+    <input type="text" id="entrada-usuario" placeholder="Digite sua mensagem...">
+    <button id="enviar-btn"><img class="setinha" src="Imagens/seta.png" alt=""></button>
+  </div>
+</div>
+
+<!-- TERMINA AQUI !!!!!! -->
+
+
+
+
+
+
+
+
+
+      <!-- EXTENSÃO DE LIBRAS -->
+      <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+          </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+        
+
+
+
+
+        <footer>
+          <div class="conteudo-footer">
+            <div class="secao-footer links">
+              <ul>
+                <a class = "aFooter" href=""><li>Sobre nós</li></a>
+                <a class = "aFooter" href="../CURSOS/index.html"><li>Cursos</li></a>
+                <a class = "aFooter" href="../BLOG/index.html"><li>Blog</li></a>
+                <a class = "aFooter" href=""><li>Chat</li></a>
+                <a class = "aFooter" href="../Dicionario/index.html"><li>Dicionário</li></a>
+                <a class = "aFooter" href="../PaginaDeJogos/index.html"><li>Jogos</li></a>
+              </ul>
+            </div>
+        
+            <div class="divisoria1"></div>
+        
+            <div class="secao-footer newsletter">
+              <h3>Newsletter</h3>
+              <p>Inscreva-se em nosso newsletter e receba todas as <br>novidades</p>
+              <form>
+                <input type="email" placeholder="Email">
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+        
+            <div class="divisoria"></div>
+        
+            <div class="secao-footer-contato">
+              <h4>Contate-nos</h4>
+              <p><img src="Icones/telefone.png" alt="Ícone Telefone">(11) 93211 - 7232</p>
+              <p><img src="Icones/email.png" alt="Ícone Email"> librali@gmail.com</p>
+              <p><img src="Icones/local.png" alt="Ícone Localização"> Ferraz de Vasconcelos - SP</p>
+              <p><img src="Icones/instagram.png" alt="Ícone Instagram"> @librali</p>
+            </div>
+          </div>
+    
+        </footer>
+        <div class="barra-escura-footer"></div>
+        
+        
+        <script src="chat.js"></script>
+        </main>
+</body>
+</html>
