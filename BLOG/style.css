@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Fonte texto";
     src: url(Fontes/Inter-VariableFont_opsz\,wght.ttf);
@@ -24,10 +28,6 @@
     src: url(Fontes/CreatoDisplay-Medium.otf);
 }
 
-@font-face{
-  font-family: "Fonte frase";
-  src: url(Fontes/buttercup_sample.ttf);
-}
 
 
 body {
@@ -135,6 +135,7 @@ header nav a {
     font-family: "Fonte texto";
     color: #F6EEE1;
 }
+
 
 
 
@@ -579,7 +580,7 @@ header nav a {
 
 
   .citacao p{
-    font-family: "Fonte frase";
+    font-family: "Fonte titulo";
     font-weight: italic;
     text-align: center;
     justify-content: center;

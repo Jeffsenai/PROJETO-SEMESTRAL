@@ -166,7 +166,7 @@ btnTxt.addEventListener('click', () => {
         const { imagem, video } = bancoDeDados[palavra];
         resultado.innerHTML = `
             <video src="${video}" controls style="width: 400px; height: auto; margin-top: 10px; margin left: 45px"></video>
-            <p  class="textoABAIXO">"${palavra}" em LIBRAS</p>
+            <p  class="textoABAIXO">ﾠﾠ"${palavra}" em LIBRAS</p>
         `;
     } else {
         
