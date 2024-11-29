@@ -4,11 +4,11 @@ const perguntas = [
   { pergunta: "Qual é o sinal para a palavra 'Família'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/familia/familia1.png", "imagens/familia/familia2.png", "imagens/familia/familia3.png", "imagens/familia/familia4.png"], resposta: 2 },
   { pergunta: "Qual é o sinal para a palavra 'Mãe'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/mae/mae1.png", "imagens/mae/mae2.png", "imagens/mae/mae3.png", "imagens/mae/mae4.png"], resposta: 3 },
   { pergunta: "Qual sinal representa a letra 'B'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/b/b1.png", "imagens/b/b2.png", "imagens/b/b3.png", "imagens/b/b4.png"], resposta: 0 },
-  { pergunta: "Qual é o sinal para a palavra 'Obrigado'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/obrigado1.png", "imagens/obrigado2.png", "imagens/obrigado3.png", "imagens/obrigado4.png"], resposta: 1 },
-  { pergunta: "Qual é o sinal para a palavra 'Casa'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/casa1.png", "imagens/casa2.png", "imagens/casa3.png", "imagens/casa4.png"], resposta: 2 },
-  { pergunta: "Qual é o sinal para a palavra 'Escola'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/escola1.png", "imagens/escola2.png", "imagens/escola3.png", "imagens/escola4.png"], resposta: 3 },
-  { pergunta: "Qual sinal representa a letra 'C'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/c1.png", "imagens/c2.png", "imagens/c3.png", "imagens/c4.png"], resposta: 0 },
-  { pergunta: "Qual é o sinal para a palavra 'Trabalho'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/trabalho1.png", "imagens/trabalho2.png", "imagens/trabalho3.png", "imagens/trabalho4.png"], resposta: 1 }
+  { pergunta: "Qual é o sinal para a palavra 'Obrigado'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/obrigado/obrigado1.png", "imagens/obrigado/obrigado2.png", "imagens/obrigado/obrigado3.png", "imagens/obrigado/obrigado4.png"], resposta: 1 },
+  { pergunta: "Qual é o sinal para a palavra 'Casa'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/casa/casa1.png", "imagens/casa/casa2.png", "imagens/casa/casa3.png", "imagens/casa/casa4.png"], resposta: 2 },
+  { pergunta: "Qual é o sinal para a palavra 'Carro'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/carro/carro1.png", "imagens/carro/carro2.png", "imagens/carro/carro3.png", "imagens/carro/carro4.png"], resposta: 3 },
+  { pergunta: "Qual sinal representa a letra 'C'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/c/c1.png", "imagens/c/c2.png", "imagens/c/c3.png", "imagens/c/c4.png"], resposta: 0 },
+  { pergunta: "Qual sinal representa a letra 'J'?", opcoes: ["A", "B", "C", "D"], imagens: ["imagens/j/j1.png", "imagens/j/j2.png", "imagens/j/j3.png", "imagens/j/j4.png"], resposta: 1 }
 ];
 
 let perguntaAtual = 0;
