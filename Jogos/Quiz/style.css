@@ -6,22 +6,22 @@
 
 @font-face {
   font-family: "Fonte texto";
-  src: url(Fontes/Inter-VariableFont_opsz\,wght.ttf);
+  src: url(../Fontes/Inter-VariableFont_opsz\,wght.ttf);
 }
 
 @font-face {
   font-family: "Fonte titulo";
-  src: url(Fontes/Inter_18pt-Bold.ttf);
+  src: url(../Fontes/Inter_18pt-Bold.ttf);
 }
 
 @font-face {
   font-family: "Fonte titulo2";
-  src: url(Fontes/CreatoDisplay-Black.otf);
+  src: url(../Fontes/CreatoDisplay-Black.otf);
 }
 
 @font-face {
   font-family: "Fonte titulo3";
-  src: url(Fontes/CreatoDisplay-Medium.otf);
+  src: url(../Fontes/CreatoDisplay-Medium.otf);
 }
 
 
