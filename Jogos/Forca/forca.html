@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/forca.css">
+
    
     <title>Jogo da Forca</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img class="logo" src="Logo/logo.png" alt="">
+        <div class="container1">
+            <img class="logo" src="logo.png" alt="">
             <nav>
-                <a class="inicio" id="navegacao" href="../../index.html">Início</a>
-                <a id="navegacao" href="../../CURSOS/index.html">Cursos</a>
+                <a class="inicio" id="navegacao" href="../index.html">Início</a>
+                <a id="navegacao" href="../CURSOS/index.html">Cursos</a>
                 <a id="navegacao" href="http://localhost:3100/adicionar">Login</a>
                 
+
+
+
                 <nav role="navigation">
                     <!-- container do menu -->
                     <div id="menuAlternar"> 
@@ -39,6 +43,8 @@
             </nav>
         </div>
     </header>
+       
+   
     <div class="container">
         <div id="imagem"></div>
 
@@ -111,6 +117,7 @@
         <!-- fim modal Bootstrap--> 
 
         <!-- Modal Adicionar Palavra -->
+         </div>
         
     
     <div id="status"></div>
@@ -118,9 +125,74 @@
     <img src="img/jogarNovamente.gif" id="jogarNovamente"></img> 
     
 
+
+
+
+
+
+
+
+
+    <!-- EXTENSÃO DE LIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+      
+
+
+
+
+      <footer>
+        <div class="conteudo-footer">
+          <div class="secao-footer links">
+            <ul>
+              <a class = "aFooter" href=""><li>Sobre nós</li></a>
+              <a class = "aFooter" href="../CURSOS/index.html"><li>Cursos</li></a>
+              <a class = "aFooter" href="../BLOG/index.html"><li>Blog</li></a>
+              <a class = "aFooter" href=""><li>Chat</li></a>
+              <a class = "aFooter" href="../Dicionario/index.html"><li>Dicionário</li></a>
+              <a class = "aFooter" href="../PaginaDeJogos/index.html"><li>Jogos</li></a>
+            </ul>
+          </div>
+      
+          <div class="divisoria1"></div>
+      
+          <div class="secao-footer newsletter">
+            <h3>Newsletter</h3>
+            <p>Inscreva-se em nosso newsletter e receba todas as <br>novidades</p>
+            <form>
+              <input type="email" placeholder="Email">
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+      
+          <div class="divisoria"></div>
+      
+          <div class="secao-footer-contato">
+            <h4>Contate-nos</h4>
+            <p><img src="Icones/telefone.png" alt="Ícone Telefone">(11) 93211 - 7232</p>
+            <p><img src="Icones/email.png" alt="Ícone Email"> librali@gmail.com</p>
+            <p><img src="Icones/local.png" alt="Ícone Localização"> Ferraz de Vasconcelos - SP</p>
+            <p><img src="Icones/instagram.png" alt="Ícone Instagram"> @librali</p>
+          </div>
+        </div>
+  
+      </footer>
+      <div class="barra-escura-footer"></div>
+
+
     <script src="js/forca.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
 </body>
 </html>

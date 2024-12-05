@@ -91,8 +91,8 @@ function comparalistas(letra) {
 
 function carregaImagemForca() {
     const imagens = [
-        "./img/forca.png",
-        "./img/forca01.png",
+        "./img/mae.png",
+        "./img/homem.png",
         "./img/forca02.png",
         "./img/forca03.png",
         "./img/forca04.png",
@@ -117,34 +117,28 @@ bntReiniciar.addEventListener("click", function () {
 function carregaListaAutomatica() {
     palavras = [
         {
-            nome: "IRLANDA",
-            categoria: "LUGARES",
-            imagem: "./j3.png",
+            nome: "MAE",
+            imagem: "./img/mae.png",
         },
         {
-            nome: "BICICLETA",
-            categoria: "TRANSPORTE",
-            imagem: "./img/bicicleta.png",
+            nome: "HOMEM",
+            imagem: "./img/homem.png",
         },
         {
-            nome: "XICARA",
-            categoria: "OBJETOS",
-            imagem: "./img/xicara.png",
+            nome: "AMIGO",
+            imagem: "./img/amigo.png",
         },
         {
             nome: "MELANCIA",
-            categoria: "ALIMENTOS",
             imagem: "./img/melancia.png",
         },
         {
-            nome: "DRAGAO",
-            categoria: "ANIMAIS",
-            imagem: "./img/dragao.png",
+            nome: "AJUDA",
+            imagem: "./img/ajuda.png",
         },
         {
-            nome: "HOMEM ARANHA",
-            categoria: "TV E CINEMA",
-            imagem: "./img/homem-aranha.png",
+            nome: "SIM",
+            imagem: "./img/sim.png",
         },
     ];
 }

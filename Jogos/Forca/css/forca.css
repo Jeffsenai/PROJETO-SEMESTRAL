@@ -43,7 +43,7 @@
   margin-right: 30px;
   }
   
-  header .container {
+  header .container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,7 +126,7 @@
   /* botão do menu */
   #menuAlternar {
     position: absolute; 
-    top: 25px; /*  topo */
+    top: 40px; /*  topo */
     right: 20px; 
     z-index: 200; /* botão por cima d menu */
   }
@@ -169,8 +169,8 @@
               opacity 0.55s ease; 
   }
   
-  /* Estados transformados para formar o "X" */
-  #menuAlternar input:checked ~ span {
+  /* Estados transformados para formar span o "X" */
+  #menuAlternar input:checked ~ {
   opacity: 1; 
   transform: rotate(45deg) translate(-1px, -1px); /* ajustado para o tamanho menor */
   background: black; 
@@ -270,6 +270,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 #imagem{
@@ -554,9 +555,188 @@
     border: 1px solid #ccc;
 }
 
-img{
+.img-fluid{
     margin-left: 480px;
     margin-top: 25px;
     width: 200px;
     height: 200px;
 }
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #0B1956;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.conteudo-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.secao-footer {
+  flex: 1;
+  
+  text-align: left;
+}
+
+.links ul {
+  list-style: none;
+  margin-left: 100px;
+  line-height: 2.0;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-family: "Fonte texto";
+}
+
+.links li {
+  margin: 10px 0;
+}
+
+/* EFEITOS DE HOVER */
+
+.links a:hover {
+  font-family: "Fonte titulo";
+  transition: color 0.5s ease;
+}
+
+/* FIM!!!! */
+
+.newsletter h3,
+.contato h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.newsletter p,
+.contato p {
+  margin: 5px 0px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+
+
+.contato {
+  padding-right: 80px;
+}
+
+.newsletter {
+  padding-left: 80px;
+}
+
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px 15px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: "Fonte texto";
+  text-align: left;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.newsletter button {
+  padding: 7px 20px;
+  color: white;
+  border-radius: 15px;
+  width: 120px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  font-family: "Fonte titulo";
+}
+
+/* EFEITOS DE HOVER */
+
+.newsletter button:hover {
+  background-color: white;
+  color:#0B1956;
+transition: color 0.5s ease;
+transition: background 0.5s ease;
+}
+
+/* FIM!!!! */
+
+
+.secao-footer-contato{
+  color: white;
+  text-align: left;
+  line-height: 2.5;
+  margin-right: 80px;
+  margin-left: 50px;
+ }
+
+ .secao-footer-contato h4 {
+  font-family: "Fonte titulo2";
+  margin-left: 20px;
+}
+
+ .secao-footer-contato p img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.secao-footer-contato p {
+  font-family: "Fonte texto";
+  margin-left: 20px;
+}
+
+
+.divisoria {
+  width: 1px;
+  background: url('../Line\ 6.png') no-repeat center center;
+  background-size: cover;
+  height: 230px;
+  margin-top: 10px;
+  margin-left: 120px;
+}
+
+.divisoria1 {
+  width: 1px;
+  background: url('../Line\ 6.png') no-repeat center center;
+  background-size: cover;
+  height: 230px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.barra-escura-footer {
+  background-color: #081446;
+  height: 60px;
+  width: 100%;
+}
+
+
