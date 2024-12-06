@@ -91,10 +91,13 @@ function comparalistas(letra) {
 
 function carregaImagemForca() {
     const imagens = [
-        "./img/mae.png",
-        "./img/homem.png",
-        "./img/amigo.png",
-    
+        "./img/forca.png",
+        "./img/forca01.png",
+        "./img/forca02.png",
+        "./img/forca03.png",
+        "./img/forca04.png",
+        "./img/forca05.png",
+        "./img/forca06.png",
     ];
     document.getElementById("imagem").style.backgroundImage = `url('${imagens[6 - tentativas]}')`;
 }
