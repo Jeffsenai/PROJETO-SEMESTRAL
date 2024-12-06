@@ -93,11 +93,8 @@ function carregaImagemForca() {
     const imagens = [
         "./img/mae.png",
         "./img/homem.png",
-        "./img/forca02.png",
-        "./img/forca03.png",
-        "./img/forca04.png",
-        "./img/forca05.png",
-        "./img/forca06.png",
+        "./img/amigo.png",
+    
     ];
     document.getElementById("imagem").style.backgroundImage = `url('${imagens[6 - tentativas]}')`;
 }
@@ -127,18 +124,6 @@ function carregaListaAutomatica() {
         {
             nome: "AMIGO",
             imagem: "./img/amigo.png",
-        },
-        {
-            nome: "MELANCIA",
-            imagem: "./img/melancia.png",
-        },
-        {
-            nome: "AJUDA",
-            imagem: "./img/ajuda.png",
-        },
-        {
-            nome: "SIM",
-            imagem: "./img/sim.png",
         },
     ];
 }
